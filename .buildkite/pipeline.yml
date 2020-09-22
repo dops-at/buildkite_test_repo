@@ -1,0 +1,9 @@
+name: 'Bazel Pipeline'
+steps:
+  - id: 'build'
+    name: ':bazel: Build'
+    commands: 'bazel build //...'
+    agents:
+      queue: "dopsBazel"
+
+
